@@ -39,11 +39,12 @@ h1,h2,h3{
 
 
 p {
+
   text-align:center;
   text-indent: 20px;
   line-height: 1.2; /* Înălțimea liniei pentru a îmbunătăți citirea */
   color: #333333; /* Culoare text */
-  font-size: 16px; /* Dimensiune text */
+  font-size: 22px; /* Dimensiune text */
   margin-bottom: 15px; /* Spațiu între paragrafe */
 }
 
@@ -65,4 +66,19 @@ h1, h2, h3, h4 {
   color: #333; /* Culoare text */
   font-weight: bold; /* Textul titlurilor să fie bold */
   margin-bottom: 10px; /* Spațiu între titluri și elementele următoare */
+}
+h2,h3,h4{
+  font-size:32px;
+}
+
+pre {
+  background-color: #aba9a9; /* Culoare de fundal gri deschis */
+  padding: 10px; /* Adăugați spațiu de la margini pentru a îmbunătăți aspectul */
+  border-radius:10px; /* Rotunjirea colțurilor */
+  margin:3% 15%;
+  overflow-x: auto; /* Adăugați o bară de derulare la orizontala dacă codul este prea lung */
+}
+
+code {
+  font-family: 'Courier New', monospace; /* Setare font pentru cod */
 }
