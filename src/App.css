@@ -8,6 +8,7 @@
 body{
   background:#4D96D5;
   min-height:100vh;
+  text-align:center;
 }
 
 .stopwatch{
@@ -31,4 +32,37 @@ body{
 
 .stopwatch button:hover{
 color:#374FA0;
+}
+h1,h2,h3{
+  margin:auto;
+}
+
+
+p {
+  text-align:center;
+  text-indent: 20px;
+  line-height: 1.2; /* Înălțimea liniei pentru a îmbunătăți citirea */
+  color: #333333; /* Culoare text */
+  font-size: 16px; /* Dimensiune text */
+  margin-bottom: 15px; /* Spațiu între paragrafe */
+}
+
+/* Stilizare pentru link-urile din interiorul elementelor <p> */
+p a {
+
+  color: #007BFF; /* Culoare link */
+  text-decoration: none; /* Eliminați sublinierea implicită */
+  font-weight: bold; /* Textul link-ului să fie bold */
+}
+
+/* Stilizare pentru link-urile la hover */
+p a:hover {
+  text-decoration: underline; /* Subliniere la hover */
+}
+
+h1, h2, h3, h4 {
+  text-align:center;
+  color: #333; /* Culoare text */
+  font-weight: bold; /* Textul titlurilor să fie bold */
+  margin-bottom: 10px; /* Spațiu între titluri și elementele următoare */
 }

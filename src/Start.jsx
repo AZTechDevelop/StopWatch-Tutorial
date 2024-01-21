@@ -1,31 +1,85 @@
 
-const start = () => {
+const Inceput = () => {
 
     return(
         <div>
-            <h2>In acest tutorial vei afla cum sa creeaza un cronometru si logica din spatele codului</h2>
-            <h3>Pentru inceput avem</h3>
-            
-            <h3>In creearea acestui cronometru s-a folosit 'useState' si 'useEffect' </h3>
-            <p>'useState' este un hook care permite 
-                componentelor funcționale să-și țină evidența stării locale (actioneaza ca o functie)
-            </p>
-            <p>Sintaxa: const [state][setState] = useState(InitialState)</p>
-            <p>state: reprezinta valoarea curenta a starii</p>
-            <p>setSate: functia care poate fi apelata pentru a actualiza starea</p>
-            <p>InitialState: valoarea initiala a starii</p>
-            <br />
-            <p>'useEffect' este un hook care permite gestionarea efectelor secundare în componente funcționale.</p>
-            <p>Acesta se foloseste de obicei in lucrul cu API-uri, gestionarea DOM-ului, in acest exemplu este utilizat 
-                pentru a gestiona efectele secundare (trecerea milisecundelor in secunde, secunde in minute)
-            </p>
-            <pre style={{background:'grey'}}>
-            <code>
-                <h4></h4>
-            </code>
+            <p>Tot ce mai ramane de facut este sa mergem in fisierul `App.jsx` si sa adaugam noua componenta `StopWatch`</p>
+            <p>Fisierul dumneavoastra ar trebui sa arate c-am asa</p>
+            <pre>
+                <code>
+                    {`
+                    import './App.css';
+
+                    import StopWatch from './StopWatch';
+                    
+                    function App() {
+                      return (
+                        <>
+                        <StopWatch />
+                        </>
+                      )
+                    }
+                    
+                    export default App;
+                    `}
+                </code>
+            </pre>
+            <h4>Putem observa ca avem importat fisierul `./App.css`, daca doriti sa va customizati singur cronometrul 
+                nu mai adaugati acest cod in './App.css'
+            </h4>
+            <pre>
+                <code>
+                    {`
+                    *{
+                        padding:0;
+                        margin:0;
+                        box-sizing:border-box;
+                        font-family:sans-serif;
+                      }
+                      
+                      body{
+                        background:#4D96D5;
+                        display:flex;
+                        justify-content:center;
+                        align-items: center;
+                        min-height:100vh;
+                      }
+                      
+                      .stopwatch{
+                        text-align:center;
+                        color:white;
+                      }
+                      
+                      h1{
+                        font-size:4rem;
+                        margin:0 0 20px;
+                      }
+                      
+                      p{
+                        font-size:2rem;
+                        margin:20px;
+                      }
+                      
+                      .stopwatch button{
+                        padding:10px;
+                        margin:10px;
+                        border-radius:5px;
+                        color:#4D96D5;
+                        background:#CAE0D0;
+                        cursor:pointer;
+                        font-size:25px;
+                        transition:0.6;
+                        border:none
+                      }
+                      
+                      .stopwatch button:hover{
+                      color:#374FA0;
+                      }
+                    `}
+                </code>
             </pre>
         </div>
     )
 }
 
-export default start;
+export default Inceput;
